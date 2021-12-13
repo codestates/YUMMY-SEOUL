@@ -129,6 +129,9 @@ export class ReviewService {
         
     }
 
+<<<<<<< HEAD
+    deleteLikeReview() :{}{
+=======
     async deleteLikeReview(userId:number,reviewId:number) {
         const data=await this.ReviewlikeRepostory.delete(
             {user_id:userId,review_id:reviewId}
@@ -140,6 +143,7 @@ export class ReviewService {
                 message: "fail to delete review like",
             }, 404);
         }
+>>>>>>> f8bf167468369ad28bfa869e0d377277ad8439bd
         return {"message":"delete review like success"}
        
     }
