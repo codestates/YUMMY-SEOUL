@@ -101,4 +101,4 @@ export class StoreService {
 //! getALL 에서 받은 데이터가 똑같애서 굳이 getOne 이 필요할까????
 //! 경로 area로 먼저 나눠야하지 않나?
 
-//SELECT ROUND(AVG(rating)) as avg_rating FROM perfume_infos 
+
