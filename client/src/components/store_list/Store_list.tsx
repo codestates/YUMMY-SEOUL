@@ -28,7 +28,7 @@ function Store_list(props: Iprops) {
   return (
     <>
       <li className="store_review_li-box">
-        <img className="store_review_img" src="/store/model.jpeg" />
+        <img className="store_review_img" src={props.ReviewInfo.user_img} />
 
         <div className={`store_balloon ${props.mesNone}`}>
           <div className="store_review-info">
