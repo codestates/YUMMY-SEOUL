@@ -4,10 +4,10 @@ function Render_slide() {
   return (
     <>
       <div className="render_main-slidebox">
-        <input type="radio" name="slide" id="render-slide-01" checked />
-        <input type="radio" name="slide" id="render-slide-02" />
-        <input type="radio" name="slide" id="render-slide-03" />
-        <input type="radio" name="slide" id="render-slide-04" />
+        <input type="radio" name="slide" id="render-slide-01" checked/>
+        <input type="radio" name="slide" id="render-slide-02" checked/>
+        <input type="radio" name="slide" id="render-slide-03" checked/>
+        <input type="radio" name="slide" id="render-slide-04" checked/>
 
         <ul className="render_main-slideList">
           <li className="render_main-item">
@@ -23,7 +23,7 @@ function Render_slide() {
               <a>
                 <img
                   className="render_main-img"
-                  src="/render/test.gif"
+                  src="/render/map.gif"
                   alt=""
                 />
               </a>
@@ -42,7 +42,7 @@ function Render_slide() {
               <a>
                 <img
                   className="render_main-img"
-                  src="/render/test.gif"
+                  src="/render/search.gif"
                   alt=""
                 />
               </a>
@@ -61,7 +61,7 @@ function Render_slide() {
               <a>
                 <img
                   className="render_main-img"
-                  src="/render/test.gif"
+                  src="/render/review.gif"
                   alt=""
                 />
               </a>
@@ -80,7 +80,7 @@ function Render_slide() {
               <a>
                 <img
                   className="render_main-img"
-                  src="/render/test.gif"
+                  src="/render/store.gif"
                   alt=""
                 />
               </a>

@@ -29,8 +29,8 @@ function Logout(props: Iprops) {
       });
 
     if (logoutData) {
-      if (window.location.href === "https://yummyseoul.com/mypage") {
-        history.push("https://yummyseoul.com/main");
+      if (window.location.href === "https://www.yummyseoul.com/mypage") {
+        history.push("/main");
       } else {
         window.location.replace(window.location.href);
       }
