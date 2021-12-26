@@ -156,7 +156,11 @@ function Search(props: Iprops) {
     },
   }));
 
-  console.log(searchWord)
+  const onKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if(e.key === "Enter") {
+      SearchClick()
+    }
+  }
 
   return (
     <>
@@ -218,6 +222,7 @@ function Search(props: Iprops) {
                       className="search_input"
                       placeholder="필터를 선택하여 검색어를 입력해주세요"
                       onChange={inputChange}
+                      onKeyPress={onKeyPress}
                     />
                     <div className="search_icon-box">
                       <img
