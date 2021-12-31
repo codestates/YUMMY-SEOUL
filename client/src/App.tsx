@@ -9,11 +9,13 @@ import Mypage from "./page/mypage/Mypage";
 import Not_found from "./components/not_found/Not_found";
 import Render from "./page/render/Render";
 import Login from "./components/login/Login";
+import ScrollToTop from "./components/scrolltop/ScrollTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop/>
         <div className="wrap">
           <Switch>
             <Route exact path="/" render={() => <Render />} />

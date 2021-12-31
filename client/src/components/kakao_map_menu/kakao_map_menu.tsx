@@ -44,8 +44,6 @@ function Kakao_map_menu(props: Iprops) {
       // 마커 이미지를 생성합니다    
       let markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize); 
       
-
-      console.log(props.store_list)
   
       props.store_list.map((el:any)=>{ 
         geocoder.addressSearch(el.address,function (result: any, status: string) {   
@@ -53,7 +51,6 @@ function Kakao_map_menu(props: Iprops) {
           if (status === window.kakao.maps.services.Status.OK) {
             let coords = new window.kakao.maps.LatLng(result[0].y, result[0].x)
             // 마커를 생성합니다
-            console.log(coords)
             var marker = new window.kakao.maps.Marker({
               map: map, // 마커를 표시할 지도
               position: coords, // 마커를 표시할 위치
