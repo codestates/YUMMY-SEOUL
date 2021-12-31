@@ -133,7 +133,6 @@ function Search(props: Iprops) {
       .then((res) => setCount(count + 1));
   };
 
-  // useEffect(() => {}, [count]);
 
   useEffect(() => {
     (async () => {
@@ -149,12 +148,17 @@ function Search(props: Iprops) {
     })();
   }, [count]);
 
-  useImperativeHandle(props.emptySearch, () => ({
+  useImperativeHandle((props.emptySearch), () => ({
     emptySearch() {
       setdata([]);
       setSer_default(true);
+      setliValue("선택")
+      setList(false)
     },
+    
   }));
+
+
 
   const onKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if(e.key === "Enter") {

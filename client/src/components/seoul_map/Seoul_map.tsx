@@ -48,7 +48,7 @@ function Seoul_map() {
     }
   };
 
-  console.log(menuData);
+  
 
   return (
     <div className={`main_wrap`}>

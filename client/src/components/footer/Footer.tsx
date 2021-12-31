@@ -15,20 +15,28 @@ function Footer() {
         </div>
         <div className="footer_box3">
           <div>
-            <img src="/git_logo.png" className="footer_img" />
-            <span className="footer_member">손승우</span>
+            <a href="https://github.com/godyuo" target="_blank">
+              <img src="/git_logo.png" className="footer_img" />
+              <span className="footer_member">손승우</span>
+            </a>
           </div>
           <div>
-            <img src="/git_logo.png" className="footer_img" />
-            <span className="footer_member">안도운</span>
+            <a href="https://github.com/DowoonAhn" target="_blank">
+              <img src="/git_logo.png" className="footer_img" />
+              <span className="footer_member">안도운</span>
+            </a>
           </div>
           <div>
-            <img src="/git_logo.png" className="footer_img" />
-            <span className="footer_member">이상현</span>
+            <a href="https://github.com/sanghyun94" target="_blank">
+              <img src="/git_logo.png" className="footer_img" />
+              <span className="footer_member">이상현</span>
+            </a>
           </div>
           <div>
-            <img src="/git_logo.png" className="footer_img" />
-            <span className="footer_member">이진성</span>
+            <a href="https://github.com/CaliforniaLuv" target="_blank">
+              <img src="/git_logo.png" className="footer_img" />
+              <span className="footer_member">이진성</span>
+            </a>
           </div>
         </div>
       </footer>

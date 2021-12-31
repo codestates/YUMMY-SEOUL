@@ -103,19 +103,7 @@ function Login(props: Iprops) {
         ", top=" +
         popupY
     )
-    
-    // if(isLogin){
-    //   await axios.get('https://localhost:4000/user/userinfo/userdata',
-    //     {
-    //       headers: { "Content-Type": "application/json" },
-    //       withCredentials: true,
-    //     }).then((res) => 
-    //     {
-    //       console.log(res)
-    //       window.location.replace(window.location.href)
-    //     })
-    // }
-    
+  
   };
 
   
