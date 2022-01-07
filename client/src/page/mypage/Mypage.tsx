@@ -28,7 +28,7 @@ interface fav_info {
   store_address: string;
   store_img: string;
   store_name: string;
-  avg_rating:number;
+  avg_rating: number;
 }
 
 function Mypage() {
@@ -121,7 +121,6 @@ function Mypage() {
     })();
   }, [count]);
 
-  console.log("유저 정보", userInfo);
   // console.log("리뷰", reviewInfo);
 
   // 초기 렌더링 상태에 찜하기 목록이 먼저 주어지므로 있는지 없는지 판별

@@ -47,7 +47,6 @@ function Password_chan(props: Iprops) {
 
   const handleChange = async () => {
     if (!pwCheck) {
-      console.log("비번 수정 중");
       await axios
         .patch(
           "https://yummyseoulserver.tk/user/change-password",

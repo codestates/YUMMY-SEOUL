@@ -60,7 +60,6 @@ function Nickname_chan(props: Iprops) {
 
   const handleChange = async () => {
     if (userCheck && nickname !== "") {
-      console.log("닉네임 수정 중");
       await axios
         .patch(
           "https://yummyseoulserver.tk/user/change-username",
@@ -104,10 +103,8 @@ function Nickname_chan(props: Iprops) {
 
   useEffect(() => {
     if (userName.message === "possible to use this username") {
-      console.log("중복되지 않음");
       setUserCheck(true);
     } else {
-      console.log("중복됨", userName.message);
       setUserCheck(false);
     }
   }, [userName]);
